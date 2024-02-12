@@ -51,7 +51,9 @@ function play(){
         if(chances < 1){
             gameOver = true;
         }
+        // console.log(gameOver);
         if(gameOver == true){
+            resultArea.textContent="아쉽네요 다음 기회에!.";
             playButton.disabled = true;
         }
 }
@@ -62,7 +64,6 @@ function reset(){
     pickRandoNum();
     playButton.disabled = false;
     history = [];
-    // console.log(history);
     resultArea.textContent = "새로운 숫자로 변경되었습니다.";
     chances =5;
     chanceArea.textContent = `남은 기회 : 5번`;

@@ -54,7 +54,7 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 30px;
-    text-align: center !important;
+    /* text-align: center !important; */
   }
   
   /* 반응형 디자인 */
@@ -67,5 +67,12 @@ body {
     body {
       height: auto;
       padding-bottom: 20px; 
+    }
+
+    input[type="number"],
+    button {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
     }
   }
