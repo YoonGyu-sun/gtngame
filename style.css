@@ -1,0 +1,71 @@
+/* style.css 파일에 추가 */
+.background-img {
+   
+    width: 100vw;
+    height: 100vh; 
+    object-fit: cover; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+
+body {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    padding: 0;
+    
+  }
+  
+
+  h1 {
+     font-family: 'Sixtyfour', sans-serif; 
+     /* font-family: "East Sea Dokdo", cursive; */
+    color: black;
+    text-align: center; 
+    margin-bottom: 350px;
+    font-family: 'Sixtyfour', sans-serif;
+  }
+  
+
+  #result-area, #chance-area {
+    color: white; 
+    font-family: 'Sixtyfour', sans-serif;
+    text-align: center; 
+    margin-bottom: 10px;
+  }
+  
+  
+  input[type="number"], button {
+    font-family: 'Sixtyfour', sans-serif;
+    margin: 5px;
+    padding-left: 100px;
+  }
+  
+
+  button {
+    cursor: pointer; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    text-align: center !important;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+   
+    .main-img {
+      height: 50vh; 
+    }
+  
+    body {
+      height: auto;
+      padding-bottom: 20px; 
+    }
+  }

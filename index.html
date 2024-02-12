@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1> 숫자 맞추기 게임 </h1>
-    <input type="number" id ="user-input"/>
-    <div id="result-area"> 결과 </div>
-    <div id="chance-area"> 남은 기회 : 5번</div>
-    <button id="play-button">Go</button>
-    <button id="reset-button">리셋</button>
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap"/> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h1>숫자 맞추기 게임</h1>
+      </div>
+      <img src="/images/DDong.png" class="background-img" />
+
+      <div>
+        <div id="result-area">결과</div>
+        <div id="chance-area">남은 기회 : 5번</div>
+        <input type="number" id="user-input" />
+
+        <div>
+          <button id="play-button">Go</button>
+          <button id="reset-button">ReSet</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
